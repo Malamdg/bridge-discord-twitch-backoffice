@@ -1,9 +1,0 @@
-{
-  "section": {
-    "qux": [
-      "value2",
-      "{not}",
-    ]
-  },
-  "baz": true
-}

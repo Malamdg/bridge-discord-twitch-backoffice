@@ -1,5 +1,0 @@
-{
-  "commands": {
-    "fake:command": "Berlioz\\Cli\\Core\\TestProject\\FakeCommand"
-  }
-}
