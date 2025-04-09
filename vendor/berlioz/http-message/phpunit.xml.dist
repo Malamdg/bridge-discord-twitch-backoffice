@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         bootstrap="./tests/bootstrap.php"
+         colors="true"
+         backupGlobals="true"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+    </coverage>
+    <testsuites>
+        <testsuite name="Berlioz Http Message test suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+        <testsuite name="http-interop/http-factory-tests">
+            <directory>./vendor/http-interop/http-factory-tests/test</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <const name="REQUEST_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+        <const name="RESPONSE_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+        <const name="SERVER_REQUEST_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+        <const name="STREAM_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+        <const name="UPLOADED_FILE_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+        <const name="URI_FACTORY" value="Berlioz\Http\Message\HttpFactory"/>
+    </php>
+</phpunit>

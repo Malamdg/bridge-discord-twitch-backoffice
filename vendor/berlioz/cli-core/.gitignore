@@ -1,0 +1,8 @@
+/vendor/
+/tests_env/var/
+!**/.gitkeep
+/composer.lock
+.phpunit.result.cache
+
+# Dev environment
+.idea
